@@ -322,78 +322,6 @@
 .pr40 {
   padding-right: 40px; }
 
-.mb45 {
-  margin-bottom: 45px; }
-
-.mt45 {
-  margin-top: 45px; }
-
-.ml45 {
-  margin-left: 45px; }
-
-.mr45 {
-  margin-right: 45px; }
-
-.mb-45 {
-  margin-bottom: -45px; }
-
-.mt-45 {
-  margin-top: -45px; }
-
-.ml-45 {
-  margin-left: -45px; }
-
-.mr-45 {
-  margin-right: -45px; }
-
-.pb45 {
-  padding-bottom: 45px; }
-
-.pt45 {
-  padding-top: 45px; }
-
-.pl45 {
-  padding-left: 45px; }
-
-.pr45 {
-  padding-right: 45px; }
-
-.mb50 {
-  margin-bottom: 50px; }
-
-.mt50 {
-  margin-top: 50px; }
-
-.ml50 {
-  margin-left: 50px; }
-
-.mr50 {
-  margin-right: 50px; }
-
-.mb-50 {
-  margin-bottom: -50px; }
-
-.mt-50 {
-  margin-top: -50px; }
-
-.ml-50 {
-  margin-left: -50px; }
-
-.mr-50 {
-  margin-right: -50px; }
-
-.pb50 {
-  padding-bottom: 50px; }
-
-.pt50 {
-  padding-top: 50px; }
-
-.pl50 {
-  padding-left: 50px; }
-
-.pr50 {
-  padding-right: 50px; }
-
 .fz12 {
   font-size: 12px; }
 
@@ -461,7 +389,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.table-block {
+.table-center {
   display: table;
   margin-left: auto;
   margin-right: auto; }
