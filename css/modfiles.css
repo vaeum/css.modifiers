@@ -19,20 +19,28 @@
     display: none;
 }
 
-.uderline {
+.hover-underline {
     text-decoration: underline;
 }
 
-.uderline:hover {
+.hover-underline:hover {
     text-decoration: none;
 }
 
-.line {
+.hover-line {
     text-decoration: none;
 }
 
-.line:hover {
+.hover-line:hover {
     text-decoration: underline;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline:hover, .no-underline:active, .no-underline:focus {
+    text-decoration: none;
 }
 
 .text-white {
@@ -85,6 +93,10 @@
 
 .cur:hover {
     cursor: pointer;
+}
+
+.lsn li {
+    list-style: none;
 }
 
 .pr {
