@@ -1,0 +1,216 @@
+.block-center, .table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overflow-elipsis, .db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.dt {
+    display: table;
+}
+
+.dn {
+    display: none;
+}
+
+.uderline {
+    text-decoration: underline;
+}
+
+.uderline:hover {
+    text-decoration: none;
+}
+
+.line {
+    text-decoration: none;
+}
+
+.line:hover {
+    text-decoration: underline;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.pr0 {
+    padding-right: 0;
+}
+
+.pb0 {
+    padding-bottom: 0;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.cur:hover {
+    cursor: pointer;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pf {
+    position: fixed;
+}
+
+.ps {
+    position: static;
+}
+
+.fz12 {
+    font-size: 12px;
+}
+
+.fz13 {
+    font-size: 13px;
+}
+
+.fz14 {
+    font-size: 14px;
+}
+
+.fz15 {
+    font-size: 15px;
+}
+
+.fz16 {
+    font-size: 16px;
+}
+
+.fz17 {
+    font-size: 17px;
+}
+
+.fz18 {
+    font-size: 18px;
+}
+
+.fz19 {
+    font-size: 19px;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+.fz21 {
+    font-size: 21px;
+}
+
+.fz22 {
+    font-size: 22px;
+}
+
+.fz23 {
+    font-size: 23px;
+}
+
+.fz24 {
+    font-size: 24px;
+}
+
+.fz25 {
+    font-size: 25px;
+}
+
+.fz26 {
+    font-size: 26px;
+}
+
+.fz27 {
+    font-size: 27px;
+}
+
+.fz28 {
+    font-size: 28px;
+}
+
+.fz29 {
+    font-size: 29px;
+}
+
+.fz30 {
+    font-size: 30px;
+}
+
+.fw100 {
+    font-weight: 100;
+}
+
+.fw200 {
+    font-weight: 200;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw800 {
+    font-weight: 800;
+}
+
+.fw900 {
+    font-weight: 900;
+}

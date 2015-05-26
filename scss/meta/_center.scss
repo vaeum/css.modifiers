@@ -1,0 +1,10 @@
+
+.block-center {
+  @extend %db;
+  @extend %margin-center;
+}
+
+.table-center {
+  @extend %dt;
+  @extend %margin-center;
+}

@@ -1,0 +1,29 @@
+%margin-center{
+  margin-left  : auto;
+  margin-right : auto;
+}
+
+%display-block{
+  display: block;
+}
+
+%display-inline-block{
+  display: inline-block;
+}
+
+%display-table{
+  display: table;
+}
+
+%display-none{
+  display: none;
+}
+
+%text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+%text-ellipsis {
+  text-overflow: ellipsis;
+}
