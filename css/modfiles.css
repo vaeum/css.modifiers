@@ -191,6 +191,13 @@
     font-size: 30px;
 }
 
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .fw100 {
     font-weight: 100;
 }
