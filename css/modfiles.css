@@ -19,6 +19,22 @@
     display: none;
 }
 
+.transform-middle, .pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pf {
+    position: fixed;
+}
+
+.ps {
+    position: static;
+}
+
 .hover-underline {
     text-decoration: underline;
 }
@@ -95,24 +111,15 @@
     cursor: pointer;
 }
 
+.transform-middle {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .lsn li {
     list-style: none;
-}
-
-.pr {
-    position: relative;
-}
-
-.pa {
-    position: absolute;
-}
-
-.pf {
-    position: fixed;
-}
-
-.ps {
-    position: static;
 }
 
 .fz12 {

@@ -1,15 +1,15 @@
 .pr{
-  position: relative;
+  @extend %position-relative;
 }
 
 .pa{
-  position: absolute;
+  @extend %position-absolute;
 }
 
 .pf{
-  position: fixed;
+  @extend %position-fixed;
 }
 
 .ps{
-  position: static;
+  @extend %position-static;
 }
