@@ -1,15 +1,15 @@
-.db{
+.db {
   @extend %display-block;
 }
 
-.dib{
+.dib {
   @extend %display-inline-block;
 }
 
-.dt{
+.dt {
   @extend %display-table;
 }
 
-.dn{
+.dn {
   @extend %display-none;
 }

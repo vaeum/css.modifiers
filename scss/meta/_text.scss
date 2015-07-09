@@ -1,13 +1,13 @@
-.overflow-elipsis{
+.overflow-elipsis {
   @extend %overflow;
   @extend %ellipsis;
   @extend %display-block;
 }
 
-.text-white{
+.text-white {
   color: white(1);
 }
 
-.text-black{
+.text-black {
   color: black(1);
 }
