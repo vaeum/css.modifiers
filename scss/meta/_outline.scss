@@ -1,7 +1,7 @@
 @if $need_outline == false {
-    a,button,input,textarea{
-        &:hover,&:active,&:focus{
-            outline: none !important;
-        }
+  a, button, input, textarea {
+    &:hover, &:active, &:focus {
+      outline: none !important;
     }
+  }
 }

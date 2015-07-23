@@ -1,3 +1,5 @@
-.cur:hover {
-  cursor: pointer;
+.cur{
+  &:hover{
+    cursor: pointer;
+  }
 }
