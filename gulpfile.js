@@ -2,7 +2,7 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var cssbeautify  = require('gulp-cssbeautify');
+var csscomb      = require('gulp-csscomb');
 
 // задача для компиляции scss файлов
 gulp.task('sass', function () {
@@ -26,7 +26,7 @@ gulp.task('sass', function () {
         ))
 
         // плагин для форматирования css кода
-        .pipe(cssbeautify())
+        .pipe(csscomb())
 
         // указываем конечную папку
         .pipe(gulp.dest('./css'));
