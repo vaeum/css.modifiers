@@ -4,6 +4,6 @@ $font_max: 30 / $font_step;
 
 @for $i from $font_min through $font_max {
   .fz#{$i * $font_step} {
-    font-size: $i * $font_step + $px;
+    @include font-size($i * $font_step);
   }
 }
