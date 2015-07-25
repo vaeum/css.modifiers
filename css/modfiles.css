@@ -13,6 +13,7 @@
     display: inline-block;
 }
 
+.table-center,
 .dt {
     display: table;
 }

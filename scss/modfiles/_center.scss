@@ -4,6 +4,6 @@
 }
 
 .table-center {
-  @extend %dt;
+  @extend %display-table;
   @extend %margin-center;
 }
