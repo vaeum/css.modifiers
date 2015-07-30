@@ -3,6 +3,9 @@ var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var csscomb      = require('gulp-csscomb');
+var csso         = require('gulp-csso');
+var cssbeautify  = require('gulp-cssbeautify');
+var cmq          = require('gulp-combine-media-queries');
 
 // задача для компиляции scss файлов
 gulp.task('sass', function () {
@@ -26,6 +29,11 @@ gulp.task('sass', function () {
         ))
 
         // плагин для форматирования css кода
+        .pipe(cmq())
+        .pipe(csso())
+        .pipe(cssbeautify({
+            autosemicolon: true
+        }))
         .pipe(csscomb())
 
         // указываем конечную папку

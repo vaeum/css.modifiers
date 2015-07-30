@@ -50,6 +50,7 @@ html {
 .hover-underline {
     text-decoration: underline;
 }
+
 .hover-underline:hover {
     text-decoration: none;
 }
@@ -57,6 +58,7 @@ html {
 .hover-line {
     text-decoration: none;
 }
+
 .hover-line:hover {
     text-decoration: underline;
 }
@@ -64,6 +66,7 @@ html {
 .no-underline {
     text-decoration: none;
 }
+
 .no-underline:hover,
 .no-underline:active,
 .no-underline:focus {
@@ -135,12 +138,12 @@ html {
 
 .fz12 {
     font-size: 12px;
-    font-size: 0.85714rem;
+    font-size: .85714rem;
 }
 
 .fz13 {
     font-size: 13px;
-    font-size: 0.92857rem;
+    font-size: .92857rem;
 }
 
 .fz14 {

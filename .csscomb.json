@@ -6,7 +6,7 @@
     "color-shorthand": true,
     "element-case": "lower",
     "eof-newline": true,
-    "leading-zero": true,
+    "leading-zero": false,
     "quotes": "single",
     "sort-order-fallback": "abc",
     "space-before-colon": "",
@@ -21,6 +21,5 @@
     "space-before-closing-brace": "\n",
     "strip-spaces": true,
     "tab-size": true,
-    "unitless-zero": true,
-    "vendor-prefix-align": false
+    "unitless-zero": true
 }
