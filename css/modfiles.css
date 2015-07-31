@@ -43,6 +43,13 @@
     outline: none;
 }
 
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 html {
     font-size: 14px;
 }
@@ -229,13 +236,6 @@ html {
 .fz30 {
     font-size: 30px;
     font-size: 2.14286rem;
-}
-
-.no-select {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .fw100 {
