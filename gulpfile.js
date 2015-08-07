@@ -7,6 +7,8 @@ var csso         = require('gulp-csso');
 var cssbeautify  = require('gulp-cssbeautify');
 var cmq          = require('gulp-combine-media-queries');
 
+var rename       = require("gulp-rename");
+
 // задача для компиляции scss файлов
 gulp.task('sass', function () {
     gulp.src(['./scss/**/*.scss'])
@@ -38,7 +40,13 @@ gulp.task('sass', function () {
         .pipe(csscomb())
 
         // указываем конечную папку
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./css'))
+
+        .pipe(csso())
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest("./css"));
 });
 
 // список файлов для наблюдения
