@@ -28,8 +28,9 @@ gulp.task('sass', function () {
             'android 4'
         ))
 
-        // плагин для форматирования css кода
+        // плагины для форматирования css кода
         .pipe(cmq())
+        // .pipe(csso(true))
         .pipe(csso())
         .pipe(cssbeautify({
             autosemicolon: true
@@ -46,9 +47,4 @@ gulp.task('watch', function () {
 });
 
 // задача по-умолчанию
-gulp.task('default',
-    [
-        'watch',
-        'sass'
-    ]
-);
+gulp.task('default',['watch', 'sass']);
