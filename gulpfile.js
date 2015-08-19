@@ -1,5 +1,7 @@
 // обьявляем переменные
 var gulp         = require('gulp');
+
+// плагины для работы с css
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var csscomb      = require('gulp-csscomb');
@@ -7,6 +9,7 @@ var csso         = require('gulp-csso');
 var cssbeautify  = require('gulp-cssbeautify');
 var cmq          = require('gulp-combine-media-queries');
 
+// плагины для работы с файлами
 var rename       = require("gulp-rename");
 
 // задача для компиляции scss файлов
