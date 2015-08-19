@@ -1,6 +1,6 @@
-.overflow-elipsis {
-  @extend %overflow;
-  @extend %ellipsis;
+.text-overflow {
+  @extend %text-overflow;
+  @extend %text-ellipsis;
   @extend %display-block;
 }
 
