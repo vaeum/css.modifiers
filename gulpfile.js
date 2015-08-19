@@ -23,15 +23,7 @@ gulp.task('sass', function () {
         }))
 
         // настройки autoprefixer
-        .pipe(autoprefixer(
-            'last 2 version',
-            'safari 5',
-            'ie 8',
-            'ie 9',
-            'opera 12.1',
-            'ios 6',
-            'android 4'
-        ))
+        .pipe(autoprefixer(['ie >= 8', 'last 3 versions', '> 2%']))
 
         // плагины для форматирования css кода
         .pipe(cmq())
@@ -45,6 +37,7 @@ gulp.task('sass', function () {
         // указываем конечную папку
         .pipe(gulp.dest('./css'))
 
+        // создаем сжатый файл
         .pipe(csso())
         .pipe(rename({
             suffix: ".min"
