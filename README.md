@@ -5,6 +5,7 @@ css модификаторы
 ### requirements
   - Gulp
   - Gulp-SASS v2.0.3
+  - Gulp-Jade
   - NodeJS
   - PostCSS
 
