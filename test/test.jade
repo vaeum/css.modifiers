@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+  head
+    title cssmodfiles test
+    meta(charset="UTF-8")
+    link(href="css/normalize.css", rel="stylesheet")
+    link(href="css/helper.css", rel="stylesheet")
+    link(href="../dist/modfiles.css", rel="stylesheet")
+  body
+    .container
+      h1 cssmodfiles test
+      hr
+
+      h2 1.
+        span.test-target  transform-middle
+
+      p transform block
+      .transform-middle-wrap
+        .transform-middle
+
+      p transform text
+      .transform-middle-wrap
+        p.transform-middle.transform-middle-text transform-middle text
+
+      p transform senter text
+      .transform-middle-wrap
+        p.transform-middle.transform-middle-text.text-center transform-middle text

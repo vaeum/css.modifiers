@@ -15,6 +15,8 @@ var selector     = require('postcss-custom-selectors')
 // плагины для работы с файлами
 var rename       = require("gulp-rename");
 
+var jade         = require("gulp-jade");
+
 // задача для компиляции scss файлов
 gulp.task('sass', function () {
     var processors = [
@@ -46,20 +48,27 @@ gulp.task('sass', function () {
         .pipe(csscomb())
 
         // указываем конечную папку
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('./dist'))
 
         // создаем сжатый файл
         .pipe(csso())
         .pipe(rename({
             suffix: ".min"
         }))
-        .pipe(gulp.dest("./css"));
+        .pipe(gulp.dest("./dist"));
 });
+
+gulp.task('jade', function () {
+    gulp.src(['./test/*.jade'])
+        .pipe(jade())
+        .pipe(gulp.dest("./test/"))
+})
 
 // список файлов для наблюдения
 gulp.task('watch', function () {
     gulp.watch('./scss/**/*.scss', ['sass']);
+    gulp.watch('./test/**/*.jade', ['jade']);
 });
 
 // задача по-умолчанию
-gulp.task('default',['watch', 'sass']);
+gulp.task('default',['watch', 'sass', 'jade']);
