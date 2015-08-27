@@ -1,3 +1,9 @@
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 body{
     background: #f7f7f7;
     font-family: "trebuchet ms", "Helvetica Neue", Helvetica, Arial, sans-serif;;
