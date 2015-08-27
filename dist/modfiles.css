@@ -63,18 +63,21 @@
     width: 100%;
 }
 
-.text-underline :hover,
-.text-underline :focus,
-.text-underline :active,
+.text-underline:hover,
+.text-underline:focus,
+.text-underline:active,
 .text-line,
-.text-underline {
+.no-underline,
+.no-underline:hover,
+.no-underline:focus,
+.no-underline:active {
     text-decoration: none;
 }
 
 .text-underline,
-.text-line :hover,
-.text-line :focus,
-.text-line :active {
+.text-line:hover,
+.text-line:focus,
+.text-line:active {
     text-decoration: underline;
 }
 

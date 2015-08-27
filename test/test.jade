@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru")
+  head
+    title cssmodfiles test
+    meta(charset="UTF-8")
+    link(href="css/normalize.css", rel="stylesheet")
+    link(href="css/helper.css", rel="stylesheet")
+    link(href="../dist/modfiles.css", rel="stylesheet")
+  body
+    .container
+      h1 cssmodfiles test
+      hr
+
+      h2 1.
+        span.test-target  transform-middle
+
+      p transform block
+      .transform-middle-wrap
+        .transform-middle
+
+      p transform text
+      .transform-middle-wrap
+        p.transform-middle.transform-middle-text transform-middle text
+
+      p transform center text
+      .transform-middle-wrap
+        p.transform-middle.transform-middle-text.text-center transform-middle center text
+
+      h2 2.
+        span.test-target  no-outline
+      button(type="button").no-outline no outline
+
+      h2 3.
+        span.test-target  no-select
+      span.no-select no-select span
+
+      h2 4.
+        span.test-target  cur
+      span.cur hover cursor span
+
+      h2 5.
+        span.test-target  text-underline
+      a(href="#").text-underline text-underline link
+
+      h2 6.
+        span.test-target  text-line
+      a(href="#").text-line text-line link
+
+      h2 7.
+        span.test-target  no-underline
+      a(href="#").no-underline no-underline link
