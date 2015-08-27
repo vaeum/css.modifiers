@@ -1,6 +1,6 @@
 @if $need_outline == false {
   a, button, input, textarea {
-    :--enter {
+    &:--press {
       @extend %outline-none;
     }
   }
@@ -8,7 +8,7 @@
 
 .no-outline{
   @extend %outline-none;
-  :--press {
+  &:--press {
     @extend %outline-none;
   }
 }
