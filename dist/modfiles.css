@@ -48,8 +48,11 @@
 
 .no-outline,
 .no-outline:hover,
+.no-outline:active,
 .no-outline:focus,
-.no-outline:active {
+.no-outline:hover:active,
+.no-outline:hover:focus,
+.no-outline:active:focus {
     outline: none;
 }
 

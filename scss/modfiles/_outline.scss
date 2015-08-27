@@ -8,7 +8,11 @@
 
 .no-outline{
   @extend %outline-none;
-  &:--press {
+  &:hover, &:active, &:focus {
     @extend %outline-none;
+    &:hover, &:active, &:focus {
+      @extend %outline-none;
+    }
   }
 }
+
