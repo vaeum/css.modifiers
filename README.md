@@ -7,7 +7,6 @@ css модификаторы
   - Gulp-SASS v2.0.3
   - NodeJS
   - PostCSS
-  - 
 
 ### Init
 
