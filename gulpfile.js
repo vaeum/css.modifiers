@@ -3,17 +3,30 @@ var gulp         = require('gulp');
 
 // плагины для работы с css
 var sass         = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
 var csscomb      = require('gulp-csscomb');
 var csso         = require('gulp-csso');
 var cssbeautify  = require('gulp-cssbeautify');
-var cmq          = require('gulp-combine-media-queries');
+var postcss      = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var pxtorem      = require('postcss-pxtorem');
+var mqpacker     = require("css-mqpacker");
+var selector     = require('postcss-custom-selectors')
 
 // плагины для работы с файлами
 var rename       = require("gulp-rename");
 
 // задача для компиляции scss файлов
 gulp.task('sass', function () {
+    var processors = [
+        autoprefixer({browsers: ['ie >= 8', 'last 3 versions', '> 2%']}),
+        pxtorem({
+            root_value: 14,
+            selector_black_list: ['html'],
+        }),
+        mqpacker,
+        selector
+    ];
+
     gulp.src(['./scss/**/*.scss'])
 
         // настройки sass плагина
@@ -22,11 +35,9 @@ gulp.task('sass', function () {
             errLogToConsole: true
         }))
 
-        // настройки autoprefixer
-        .pipe(autoprefixer(['ie >= 8', 'last 3 versions', '> 2%']))
+        .pipe(postcss(processors))
 
         // плагины для форматирования css кода
-        .pipe(cmq())
         // .pipe(csso(true))
         .pipe(csso())
         .pipe(cssbeautify({

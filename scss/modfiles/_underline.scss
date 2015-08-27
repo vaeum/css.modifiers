@@ -1,26 +1,20 @@
-.hover-underline {
+.text-underline {
   @extend %text-decoration-underline;
-  &:hover,
-  &:focus,
-  &:active {
+  :--press{
     @extend %text-decoration-none;
   }
 }
 
-.hover-line {
+.text-line {
   @extend %text-decoration-none;
-  &:hover,
-  &:focus,
-  &:active {
+  :--press {
     @extend %text-decoration-underline;
   }
 }
 
-.no-underline {
+.text-underline {
   @extend %text-decoration-none;
-  &:hover,
-  &:focus,
-  &:active {
+  :--press{
     @extend %text-decoration-none;
   }
 }

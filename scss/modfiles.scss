@@ -1,11 +1,13 @@
+// core
 @import "modfiles/variables";
 @import "extend/extend";
 @import "function/color";
 @import "mixin/font-size";
 
+//main style
 @import "meta/base";
 @import "modfiles/bootstrap";
-@import "modfiles/hover-line";
+@import "modfiles/underline";
 @import "modfiles/text";
 @import "modfiles/margin";
 @import "modfiles/padding";
@@ -14,9 +16,11 @@
 @import "modfiles/middle";
 @import "modfiles/list";
 @import "modfiles/position";
-@import "modfiles/font-size";
 @import "modfiles/display";
 @import "modfiles/select";
-@import "modfiles/font-weight";
 @import "modfiles/outline";
 @import "modfiles/fluid";
+
+// font style
+@import "modfiles/font-size";
+@import "modfiles/font-weight";
