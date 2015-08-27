@@ -40,3 +40,7 @@ span.test-target{
 .transform-middle-text.text-center{
     text-align: center;
 }
+
+span.no-select{
+    font-size: 20px;
+}
