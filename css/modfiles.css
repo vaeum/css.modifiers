@@ -45,7 +45,10 @@
     position: static;
 }
 
-.no-outline {
+.no-outline,
+.no-outline :hover,
+.no-outline :focus,
+.no-outline :active {
     outline: none;
 }
 
