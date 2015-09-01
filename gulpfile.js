@@ -1,15 +1,14 @@
-var gulp         = require('gulp');
-var sass         = require('gulp-sass');
-var csscomb      = require('gulp-csscomb');
-var csso         = require('gulp-csso');
-var cssbeautify  = require('gulp-cssbeautify');
-var postcss      = require('gulp-postcss');
-var autoprefixer = require('autoprefixer-core');
-var pxtorem      = require('postcss-pxtorem');
-var mqpacker     = require("css-mqpacker");
-var selector     = require('postcss-custom-selectors')
-var rename       = require("gulp-rename");
-var jade         = require("gulp-jade");
+var gulp          = require('gulp');
+var sass          = require('gulp-sass');
+var csso          = require('gulp-csso');
+var postcss       = require('gulp-postcss');
+var autoprefixer  = require('autoprefixer-core');
+var pxtorem       = require('postcss-pxtorem');
+var mqpacker      = require("css-mqpacker");
+var selector      = require('postcss-custom-selectors');
+var perfectionist = require('perfectionist');
+var rename        = require("gulp-rename");
+var jade          = require("gulp-jade");
 
 gulp.task('sass', function () {
     var processors = [
@@ -29,10 +28,11 @@ gulp.task('sass', function () {
         }))
         .pipe(postcss(processors))
         .pipe(csso())
-        .pipe(cssbeautify({
-            autosemicolon: true
-        }))
-        .pipe(csscomb())
+        .pipe(postcss([perfectionist({
+            maxValueLength: false,
+            maxAtRuleLength: false,
+            maxSelectorLength: true
+        })]))
         .pipe(gulp.dest('./dist'))
 
         .pipe(csso())

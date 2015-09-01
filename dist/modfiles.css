@@ -58,9 +58,9 @@
 
 .no-select {
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .fluid {
@@ -85,6 +85,10 @@
     text-decoration: underline;
 }
 
+.text-smoothing {
+    text-shadow: -1px -1px 1px rgba(255,255,255,.2),1px 1px 1px rgba(255,255,255,.2),1px 1px 1px rgba(0,0,0,.7);
+}
+
 html {
     font-size: 14px;
 }
@@ -95,10 +99,6 @@ html {
 
 .text-black {
     color: #000;
-}
-
-.text-smoothing {
-    text-shadow: -1px -1px 1px rgba(255,255,255,.2),1px 1px 1px rgba(255,255,255,.2),1px 1px 1px rgba(0,0,0,.7);
 }
 
 .m0 {
@@ -148,8 +148,8 @@ html {
 .transform-middle {
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .lsn li {
