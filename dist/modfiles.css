@@ -49,7 +49,7 @@
 .no-outline:active,
 .no-outline:focus,
 .no-outline:active:focus {
-    outline: none;
+    outline: none!important;
 }
 
 .no-select {
