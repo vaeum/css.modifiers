@@ -24,7 +24,7 @@
     "gulp-postcss": "^6.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
-    "perfectionist": "^1.4.1",
+    "perfectionist": "^2.0.0",
     "postcss-custom-selectors": "^3.0.0",
     "postcss-pxtorem": "^3.0.0"
   }
