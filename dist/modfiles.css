@@ -6,6 +6,7 @@
 
 .text-overflow,
 .block-center,
+.transform-middle,
 .db {
     display: block;
 }
@@ -49,7 +50,7 @@
 .no-outline:active,
 .no-outline:focus,
 .no-outline:active:focus {
-    outline: none!important;
+    outline: none !important;
 }
 
 .no-select {
@@ -82,7 +83,7 @@
 }
 
 .text-smoothing {
-    text-shadow: -1px -1px 1px rgba(255,255,255,.2),1px 1px 1px rgba(255,255,255,.2),1px 1px 1px rgba(0,0,0,.7);
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(0, 0, 0, .7);
 }
 
 .fn {
