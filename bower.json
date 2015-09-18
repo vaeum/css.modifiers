@@ -1,0 +1,16 @@
+{
+    "name": "css.modfiles",
+    "version": "0.0.2",
+    "ignore": [
+        ".idea",
+        ".gitignore",
+        "package.json",
+        "gulpfile.js",
+        ".editorconfig",
+        "test/",
+        "scss/"
+    ],
+    "dependencies": {
+        "bootstrap": ">=3.3.2"
+    }
+}
