@@ -7,8 +7,7 @@
         "package.json",
         "gulpfile.js",
         ".editorconfig",
-        "test/",
-        "scss/"
+        "test/"
     ],
     "dependencies": {
         "bootstrap": ">=3.3.2"

@@ -10,16 +10,17 @@ var perfectionist = require('perfectionist');
 var rename        = require("gulp-rename");
 var jade          = require("gulp-jade");
 
+var processors = [
+    autoprefixer({browsers: ['ie >= 8', 'last 3 versions', '> 2%']}),
+    pxtorem({
+        root_value: 14,
+        selector_black_list: ['html']
+    }),
+    mqpacker,
+    selector
+];
+
 gulp.task('sass', function () {
-    var processors = [
-        autoprefixer({browsers: ['ie >= 8', 'last 3 versions', '> 2%']}),
-        pxtorem({
-            root_value: 14,
-            selector_black_list: ['html'],
-        }),
-        mqpacker,
-        selector
-    ];
 
     gulp.src(['./scss/**/*.scss'])
         .pipe(sass({
@@ -46,11 +47,9 @@ gulp.task('jade', function () {
     gulp.src(['./test/*.jade'])
         .pipe(jade())
         .pipe(gulp.dest("./test/"))
-})
+});
 
-gulp.task('watch', function () {
+gulp.task('default',['sass', 'jade'], function(){
     gulp.watch('./scss/**/*.scss', ['sass']);
     gulp.watch('./test/**/*.jade', ['jade']);
 });
-
-gulp.task('default',['watch', 'sass', 'jade']);

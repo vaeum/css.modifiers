@@ -82,12 +82,16 @@
     text-decoration: underline;
 }
 
+.fn {
+    float: none;
+}
+
 .text-smoothing {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(0, 0, 0, .7);
 }
 
-.fn {
-    float: none;
+.lsn li {
+    list-style: none;
 }
 
 html {
@@ -191,10 +195,6 @@ html {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-}
-
-.lsn li {
-    list-style: none;
 }
 
 .fz12 {
