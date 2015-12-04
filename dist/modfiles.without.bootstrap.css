@@ -7,6 +7,7 @@
 .text-overflow,
 .block-center,
 .transform-middle,
+ul.menu-list>li>a,
 .db {
     display: block;
 }
@@ -82,6 +83,10 @@
     text-decoration: underline;
 }
 
+ul.menu-list>li {
+    float: left;
+}
+
 .fn {
     float: none;
 }
@@ -90,7 +95,22 @@
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(0, 0, 0, .7);
 }
 
-.lsn li {
+ul.menu-list {
+    *zoom: 1;
+}
+
+ul.menu-list:before,
+ul.menu-list:after {
+    content: " ";
+    display: table;
+}
+
+ul.menu-list:after {
+    clear: both;
+}
+
+.lsn li,
+ul.menu-list>li {
     list-style: none;
 }
 
@@ -107,46 +127,6 @@
 
 html {
     font-size: 14px;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-nowrap {
-    white-space: nowrap;
-}
-
-.text-lowercase {
-    text-transform: lowercase;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.text-capitalize {
-    text-transform: capitalize;
-}
-
-.pull-left {
-    float: left !important;
-}
-
-.pull-right {
-    float: right !important;
 }
 
 .text-white {
@@ -206,6 +186,11 @@ html {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+}
+
+ul.menu-list {
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .fz12 {
@@ -337,4 +322,50 @@ html {
 
 .fw900 {
     font-weight: 900;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
 }

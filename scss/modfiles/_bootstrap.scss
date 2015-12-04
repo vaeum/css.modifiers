@@ -1,41 +1,39 @@
-@if $bootstrap == false {
-  .text-left {
-    text-align: left;
-  }
+.text-left {
+  text-align: left;
+}
 
-  .text-center {
-    text-align: center;
-  }
+.text-center {
+  text-align: center;
+}
 
-  .text-right {
-    text-align: right;
-  }
+.text-right {
+  text-align: right;
+}
 
-  .text-justify {
-    text-align: justify;
-  }
+.text-justify {
+  text-align: justify;
+}
 
-  .text-nowrap {
-    white-space: nowrap;
-  }
+.text-nowrap {
+  white-space: nowrap;
+}
 
-  .text-lowercase {
-    text-transform: lowercase;
-  }
+.text-lowercase {
+  text-transform: lowercase;
+}
 
-  .text-uppercase {
-    text-transform: uppercase;
-  }
+.text-uppercase {
+  text-transform: uppercase;
+}
 
-  .text-capitalize {
-    text-transform: capitalize;
-  }
+.text-capitalize {
+  text-transform: capitalize;
+}
 
-  .pull-left {
-    float: left !important;
-  }
+.pull-left {
+  float: left !important;
+}
 
-  .pull-right {
-    float: right !important;
-  }
+.pull-right {
+  float: right !important;
 }
