@@ -23,10 +23,7 @@ var processors = [
 gulp.task('sass', function () {
 
     gulp.src(['./scss/**/*.scss'])
-        .pipe(sass({
-            outputStyle: 'nested',
-            errLogToConsole: true
-        }))
+        .pipe(sass({errLogToConsole: true}))
         .pipe(postcss(processors))
         .pipe(csso())
         .pipe(postcss([perfectionist({
