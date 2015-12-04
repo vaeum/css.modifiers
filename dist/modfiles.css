@@ -95,9 +95,17 @@ ul.menu-list>li {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(255, 255, 255, .2), 1px 1px 1px rgba(0, 0, 0, .7);
 }
 
+ul.menu-list {
+    *zoom: 1;
+}
+
+ul.menu-list:before,
 ul.menu-list:after {
-    content: "";
+    content: " ";
     display: table;
+}
+
+ul.menu-list:after {
     clear: both;
 }
 

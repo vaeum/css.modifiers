@@ -83,10 +83,15 @@
   1px 1px 1px rgba(0,0,0,0.7); // тёмная тень
 }
 
+// http://nicolasgallagher.com/micro-clearfix-hack/
 %clearfix {
-  &:after {
-    content: "";
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
     display: table;
+  }
+
+  &:after {
     clear: both;
   }
 }
