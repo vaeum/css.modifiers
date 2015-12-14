@@ -1,6 +1,6 @@
 # css.Modfiles
 
-CSS модификаторы
+CSS Modifiers
 
 ### Requirements
   - Gulp
