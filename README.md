@@ -1,10 +1,10 @@
-# Modfiles
+# css.Modfiles
 
-css модификаторы
+CSS модификаторы
 
-### requirements
+### Requirements
   - Gulp
-  - Gulp-SASS v2.0.3
+  - Gulp-SASS
   - Gulp-Jade
   - NodeJS
   - PostCSS
