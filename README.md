@@ -1,13 +1,30 @@
-# Modfiles
+# css.Modfiles
 
-css модификаторы
+[![Build Status](https://travis-ci.org/vaeum/css.modfiles.svg?branch=master)](https://travis-ci.org/vaeum/css.modfiles)
 
-### requirements
+CSS Modifiers
+
+### Requirements
   - Gulp
-  - Gulp-SASS v2.0.3
+  - Gulp-SASS
   - Gulp-Jade
   - NodeJS
   - PostCSS
+  - PostCSS plugins
+    - autoprefixer
+    - postcss-pxtorem
+    - css-mqpacker
+    - postcss-custom-selectors
+    - perfectionist
+
+### Before Init
+
+- Install NodeJS [link](https://nodejs.org/)
+- install gulp global
+
+```
+npm install gulp -g
+```
 
 ### Init
 

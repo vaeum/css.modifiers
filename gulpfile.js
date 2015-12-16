@@ -7,8 +7,8 @@ var pxtorem       = require('postcss-pxtorem');
 var mqpacker      = require("css-mqpacker");
 var selector      = require('postcss-custom-selectors');
 var perfectionist = require('perfectionist');
-var rename        = require("gulp-rename");
-var jade          = require("gulp-jade");
+var rename        = require('gulp-rename');
+var jade          = require('gulp-jade');
 
 var processors = [
     autoprefixer({browsers: ['ie >= 8', 'last 3 versions', '> 2%']}),
