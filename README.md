@@ -1,5 +1,7 @@
 # css.Modfiles
 
+[![Build Status](https://travis-ci.org/vaeum/css.modfiles.svg?branch=master)](https://travis-ci.org/vaeum/css.modfiles)
+
 CSS Modifiers
 
 ### Requirements
