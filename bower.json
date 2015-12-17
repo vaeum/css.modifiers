@@ -1,6 +1,6 @@
 {
     "name": "css.modfiles",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "ignore": [
         ".idea",
         ".gitignore",
@@ -10,6 +10,6 @@
         "test/"
     ],
     "dependencies": {
-        "bootstrap": ">=3.3.2"
+        "bootstrap": ">=3.3.6"
     }
 }
