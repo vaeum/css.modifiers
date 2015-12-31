@@ -1,6 +1,10 @@
 {
     "name": "css.modfiles",
-    "version": "0.0.5",
+    "version": "0.0.6",
+    "main": [
+        "dist/modfiles.css",
+        "dist/modfiles.without.bootstrap.css"
+    ],
     "ignore": [
         ".idea",
         ".gitignore",

@@ -1,11 +1,8 @@
 {
   "name": "css.modfiles",
-  "version": "0.0.3",
-  "description": "small library",
+  "version": "0.0.6",
+  "description": "small css library",
   "main": "vaeum@yahoo.com",
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vaeum/css.modfiles.git"
@@ -16,7 +13,7 @@
   "author": "vaeum",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.1.2",
+    "autoprefixer": "^6.2.3",
     "css-mqpacker": "^4.0.0",
     "gulp": "^3.8.11",
     "gulp-csso": "^1.0.1",
@@ -26,6 +23,6 @@
     "gulp-sass": "^2.1.1",
     "perfectionist": "^2.1.2",
     "postcss-custom-selectors": "^3.0.0",
-    "postcss-pxtorem": "^3.1.1"
+    "postcss-pxtorem": "^3.3.1"
   }
 }
