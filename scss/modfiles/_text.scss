@@ -1,0 +1,17 @@
+.text-overflow {
+  @extend %text-overflow;
+  @extend %text-ellipsis;
+  @extend %display-block;
+}
+
+.text-white {
+  color: white(1);
+}
+
+.text-black {
+  color: black(1);
+}
+
+.text-smoothing{
+  @extend %text-smoothing;
+}

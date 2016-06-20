@@ -1,0 +1,50 @@
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background: #f7f7f7;
+    font-family: "trebuchet ms", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+.container{
+    background: #FFF;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+span.test-target{
+    color: #1B69D2;
+}
+
+.transform-middle-wrap{
+    background: #999;
+    width: 500px;
+    height: 200px;
+}
+
+.transform-middle{
+    background: #333;
+    height: 50px;
+}
+
+.transform-middle-text{
+    background: #999;
+    height: auto;
+    color: #FFF;
+}
+
+.transform-middle-text.text-center{
+    text-align: center;
+}
+
+span.no-select{
+    font-size: 20px;
+}
+
+span.cur{
+    font-size: 20px;
+}

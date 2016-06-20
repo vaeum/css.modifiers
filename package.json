@@ -1,0 +1,28 @@
+{
+  "name": "css.Modifiers",
+  "version": "0.0.7",
+  "description": "small css library",
+  "main": "dist/modifiers.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaeum/css.Modifiers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vaeum/css.Modifiers/issues"
+  },
+  "homepage": "https://github.com/vaeum/css.Modifiers#readme",
+  "author": "vaeum",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "perfectionist": "^2.1.3",
+    "postcss-custom-selectors": "^3.0.0"
+  }
+}

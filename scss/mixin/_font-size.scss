@@ -1,0 +1,6 @@
+// example
+// @include font-size(15);
+@mixin font-size($sizeValue: 14) {
+  font-size: $sizeValue + $px;
+  font-size: $sizeValue / $base_font + $rem;
+}
