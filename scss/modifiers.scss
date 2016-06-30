@@ -1,24 +1,24 @@
 // core
-@import "modfiles/variables";
+@import "modifiers/variables";
 @import "extend/extend";
 @import "function/color";
 
 //main style
-@import "modfiles/underline";
-@import "modfiles/text";
-@import "modfiles/margin";
-@import "modfiles/padding";
-@import "modfiles/cursor";
-@import "modfiles/center";
-@import "modfiles/middle";
-@import "modfiles/list";
-@import "modfiles/position";
-@import "modfiles/display";
-@import "modfiles/select";
-@import "modfiles/outline";
-@import "modfiles/fluid";
-@import "modfiles/float";
-@import "modfiles/hard-hide";
+@import "modifiers/underline";
+@import "modifiers/text";
+@import "modifiers/margin";
+@import "modifiers/padding";
+@import "modifiers/cursor";
+@import "modifiers/center";
+@import "modifiers/middle";
+@import "modifiers/list";
+@import "modifiers/position";
+@import "modifiers/display";
+@import "modifiers/select";
+@import "modifiers/outline";
+@import "modifiers/fluid";
+@import "modifiers/float";
+@import "modifiers/hard-hide";
 
 // font style
-@import "modfiles/font-weight";
+@import "modifiers/font-weight";
