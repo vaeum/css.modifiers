@@ -2,7 +2,7 @@
 
 A small library of modifiers for your projects
 
-[![NPM](https://nodei.co/npm-dl/css.Modifiers.png?months=1)](https://nodei.co/npm/css.Modifiers/)
+[![NPM](https://nodei.co/npm-dl/css.modifiers.png?months=1)](https://nodei.co/npm/css.modifiers/)
 
 ### Install
 
