@@ -1,4 +1,4 @@
-# css.Modifiers
+# css.modifiers
 
 A small library of modifiers for your projects
 
@@ -7,17 +7,17 @@ A small library of modifiers for your projects
 ### Install
 
 ```
-npm install css.Modifiers -D
+npm install css.modifiers -D
 ```
 
 ```
-import 'css.Modifiers';
+import 'css.modifiers';
 ```
 
 ### Develop
 
 ```
-git clone https://github.com/vaeum/css.Modifiers.git
+git clone https://github.com/vaeum/css.modifiers.git
 cd css.Modifiers
 npm install
 gulp
