@@ -33,6 +33,8 @@ Thumbs.db
 bower_components
 test
 Makefile
+.editorconfig
+.gitignore
 
 # Node.JS
 node_modules

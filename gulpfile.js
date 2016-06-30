@@ -15,9 +15,9 @@ var processors = [
     selector
 ];
 
-gulp.task('sass', function () {
+gulp.task('scss', function () {
 
-    return gulp.src(['./scss/**/*.scss'])
+    return gulp.src(['./src/**/*.scss'])
         .pipe(sass({errLogToConsole: true}))
         .pipe(postcss(processors))
         .pipe(csso())
@@ -31,13 +31,6 @@ gulp.task('sass', function () {
         .pipe(gulp.dest("./dist"));
 });
 
-gulp.task('jade', function () {
-    return gulp.src(['./test/*.jade'])
-        .pipe(jade())
-        .pipe(gulp.dest("./test/"))
-});
-
-gulp.task('default',['sass', 'jade'], function(){
-    gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch('./test/**/*.jade', ['jade']);
+gulp.task('default',['scss'], function(){
+    gulp.watch('./scss/**/*.scss', ['scss']);
 });
