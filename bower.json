@@ -1,0 +1,17 @@
+{
+  "name": "css.modifiers",
+  "description": "small css library",
+  "main": "dist/modifiers.css",
+  "authors": [
+    "vaeum"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vaeum/css.modifiers",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
