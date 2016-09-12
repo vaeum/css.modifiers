@@ -1,3 +1,7 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
 .block-center, .table-center {
     margin-left: auto;
     margin-right: auto;
@@ -56,12 +60,13 @@
     width: 100%;
 }
 
-.no-underline, .no-underline:active, .no-underline:focus, .no-underline:hover,
-.text-line, .text-underline:active, .text-underline:focus, .text-underline:hover {
+.no-underline:active, .no-underline:focus, .no-underline:hover,
+.text-underline:active, .text-underline:focus, .text-underline:hover,
+e.no-underlin, e.text-lin {
     text-decoration: none;
 }
 
-.text-line:active, .text-line:focus, .text-line:hover, .text-underline {
+.text-line:active, .text-line:focus, .text-line:hover, e.text-underlin {
     text-decoration: underline;
 }
 
