@@ -1,6 +1,6 @@
 {
   "name": "css.modifiers",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "small css library",
   "main": "dist/modifiers.css",
   "repository": {
@@ -13,7 +13,7 @@
   "homepage": "https://github.com/vaeum/css.modifiers#readme",
   "author": "vaeum",
   "license": "MIT",
-  "script": {
+  "scripts": {
     "prepublish": "gulp scss"
   },
   "devDependencies": {
