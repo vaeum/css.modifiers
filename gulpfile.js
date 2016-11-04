@@ -7,10 +7,21 @@ var mqpacker      = require("css-mqpacker");
 var selector      = require('postcss-custom-selectors');
 var perfectionist = require('perfectionist');
 var rename        = require('gulp-rename');
-var jade          = require('gulp-jade');
+
+// настройки автопрефиксера
+var AUTOPREFIXER_BROWSERS = [
+  'Android 2.3',
+  'Android >= 4',
+  'Chrome >= 35',
+  'Firefox >= 31',
+  'Explorer >= 9',
+  'iOS >= 7',
+  'Opera >= 12',
+  'Safari >= 7.1'
+];
 
 var processors = [
-    autoprefixer({browsers: ['ie >= 8', 'last 3 versions', '> 2%']}),
+    autoprefixer({browsers: AUTOPREFIXER_BROWSERS}),
     mqpacker,
     selector
 ];
