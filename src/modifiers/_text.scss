@@ -45,5 +45,9 @@
 }
 
 .text-capitalize {
-  text-transform: capitalize;
+  @extend %text-capitalize;
+}
+
+.text-middle{
+  @extend %text-middle;
 }

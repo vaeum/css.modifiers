@@ -30,6 +30,7 @@ Thumbs.db
 .hg
 .idea
 .svn
+dist/
 bower_components
 Makefile
 

@@ -115,3 +115,11 @@
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
+
+%text-middle {
+  vertical-align: middle;
+}
+
+%text-capitalize {
+  text-transform: capitalize;
+}
