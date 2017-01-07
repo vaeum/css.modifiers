@@ -17,13 +17,13 @@
     "prepublish": "gulp scss"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
+    "autoprefixer": "^6.6.1",
     "css-mqpacker": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-csso": "^2.0.0",
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "^3.0.0",
     "perfectionist": "^2.3.1",
     "postcss-custom-selectors": "^3.0.0"
   }
