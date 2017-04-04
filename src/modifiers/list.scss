@@ -1,3 +1,7 @@
+@import "../variables";
+@import "../extend/extend";
+@import "../function/color";
+
 .lsn {
   li {
     @extend %list-style-none;

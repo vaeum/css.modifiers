@@ -1,6 +1,6 @@
 {
   "name": "css.modifiers",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "small css library",
   "main": "dist/modifiers.css",
   "repository": {
@@ -14,17 +14,17 @@
   "author": "vaeum",
   "license": "MIT",
   "scripts": {
-    "prepublish": "gulp scss"
+    "prepublish": "./node_modules/.bin/gulp scss && ./node_modules/.bin/gulp lib"
   },
   "devDependencies": {
-    "autoprefixer": "^6.6.1",
+    "autoprefixer": "^6.7.7",
     "css-mqpacker": "^5.0.1",
     "gulp": "^3.9.1",
-    "gulp-csso": "^2.0.0",
-    "gulp-postcss": "^6.1.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.0.0",
-    "perfectionist": "^2.3.1",
+    "gulp-sass": "^3.1.0",
+    "perfectionist": "^2.4.0",
     "postcss-custom-selectors": "^3.0.0"
   }
 }

@@ -1,0 +1,7 @@
+@import "../variables";
+@import "../extend/extend";
+@import "../function/color";
+
+.no-select {
+  @extend %user-select-none;
+}

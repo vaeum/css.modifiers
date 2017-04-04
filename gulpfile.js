@@ -8,7 +8,6 @@ var selector      = require('postcss-custom-selectors');
 var perfectionist = require('perfectionist');
 var rename        = require('gulp-rename');
 
-// настройки автопрефиксера
 var AUTOPREFIXER_BROWSERS = [
   'Android 2.3',
   'Android >= 4',
@@ -21,27 +20,44 @@ var AUTOPREFIXER_BROWSERS = [
 ];
 
 var processors = [
-    autoprefixer({browsers: AUTOPREFIXER_BROWSERS}),
-    mqpacker,
-    selector
+  autoprefixer({browsers: AUTOPREFIXER_BROWSERS}),
+  mqpacker,
+  selector
 ];
 
 gulp.task('scss', function () {
 
-    return gulp.src(['./src/**/*.scss'])
-        .pipe(sass({errLogToConsole: true}))
-        .pipe(postcss(processors))
-        .pipe(csso())
-        .pipe(postcss([perfectionist()]))
-        .pipe(gulp.dest('./dist'))
+  return gulp.src(['./src/modifiers.scss'])
+    .pipe(sass({errLogToConsole: true}))
+    .pipe(postcss(processors))
+    .pipe(csso())
+    .pipe(postcss([perfectionist()]))
+    .pipe(gulp.dest('./dist'))
 
-        .pipe(csso())
-        .pipe(rename({
-            suffix: ".min"
-        }))
-        .pipe(gulp.dest("./dist"));
+    .pipe(csso())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("./dist"));
 });
 
-gulp.task('default',['scss'], function(){
+gulp.task('lib', function () {
+
+  return gulp.src(['./src/modifiers/*.scss'])
+    .pipe(sass({errLogToConsole: true}))
+    .pipe(postcss(processors))
+    .pipe(csso())
+    .pipe(postcss([perfectionist()]))
+    .pipe(gulp.dest('./lib'))
+
+    .pipe(csso())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("./lib"));
+});
+
+gulp.task('default',['scss', 'lib'], function(){
     gulp.watch('./scss/**/*.scss', ['scss']);
+    gulp.watch('./src/modifiers/*.scss', ['lib']);
 });

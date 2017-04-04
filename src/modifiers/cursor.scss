@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../extend/extend";
+@import "../function/color";
+
+.cur{
+  &:hover{
+    cursor: pointer;
+  }
+}

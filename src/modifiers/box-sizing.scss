@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../extend/extend";
+@import "../function/color";
+
+*,
+*:after,
+*:before {
+  @extend %border-box;
+}

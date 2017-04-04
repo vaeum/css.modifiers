@@ -1,3 +1,7 @@
+@import "../variables";
+@import "../extend/extend";
+@import "../function/color";
+
 .transform-middle {
   @extend %position-relative;
   @extend %display-block;
